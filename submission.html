@@ -32,6 +32,8 @@
             //(GET method) get your query string values by field
             var firstName = GetURLParameterValue("first");
             var lastName = GetURLParameterValue("last");
+            var favoriteDrink = GetURLParameterValue("favoriteDrink");
+            var rating = GetURLParameterValue("rating");
             //populate desired HTML elements with desired values
             //we pass in the id name of the HTML element we want
             //to populate with the query string text
@@ -39,6 +41,8 @@
             // want to populate with text)
             document.getElementById("fname").textContent = firstName;
             document.getElementById("lname").textContent = lastName;
+            document.getElementById("fdrink").textContent = favoriteDrink;
+            document.getElementById("rating").textContent = rating;
         };
 
         //Function retrieves the requested GET parameter value from
@@ -70,6 +74,12 @@
         <tr>
             <td id="fname"></td>
             <td id="lname"></td>
+        </tr>
+        <tr>
+            <td id="fdrink"></td>
+        </tr>
+        <tr>
+            <td id="rating"></td>
         </tr>
     </table>
 </body>
